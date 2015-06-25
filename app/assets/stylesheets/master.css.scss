@@ -31,19 +31,21 @@
 
 .links {
 	padding-top:26px;
-	
+	font-color:black;
 	font-size: 25px;
 }
 
 .links a {
 	font-family: 'quicksandbold', sans-serif;
-    font-color:black;
+    font-color:#000000;
     font-weight:bold;
     font-size:25px;
-	border-bottom: 3px solid #7A1225
+	 border-bottom: 2px solid #7A1225
 }
 
-
+.logo:hover {
+  text-decoration:none;
+}
 
 header {
 	border-top: 9px solid #7A1225
@@ -54,14 +56,14 @@ hr {
 }
 
 h1 {
- font-family: 'quicksandbold', sans-serif;
+ font-family: 'quicksandregular', sans-serif;
  font-weight:bold;
  font-size:48px;
 }
 
 h2 {
-  font-family: 'quicksandregular', sans-serif;
-  font-size:40px;
+  font-family: 'quicksandbold', sans-serif;
+  font-size:36px;
 }
 
 .next-quote {
