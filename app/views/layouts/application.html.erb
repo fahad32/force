@@ -8,6 +8,9 @@
   <%= csrf_meta_tags %>
 </head>
 
+
+
+
 <body>
 	<header>
 		<div class="col-xs-3">
@@ -28,18 +31,46 @@
 		</div>
 
 		<div class="col-xs-5 links">
-			<%= link_to 'Contribute', new_quote_path %>
+			   <!-- Button trigger modal -->
+           <%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
+      </button>
 			<%= link_to 'About', about_path %>
+
 		</div>
 	</header>
 
-	<hr />
+	 <!-- Modal -->
+	  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          <h4 class="modal-title" id="myModalLabel">Contribute your own Quote</h4>
+	        </div>
+	        <div class="modal-body">
+	            <%= simple_form_for Quote.new do |f| %>
+				<%= f.input :saying %>
+				<%= f.input :author %>
 
-	<br class="clear" />
+				<br />
+				<%= f.submit 'Create', :class => 'btn btn-danger' %>
+			    <% end %>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	          <button type="button" class="btn btn-primary">Submit</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
 
-		<%= yield %>
+		<hr />
 
-	</div>
+		<br class="clear" />
+
+			<%= yield %>
+
+		</div>
 
 	<div class="footer">
 		<div class="container">
