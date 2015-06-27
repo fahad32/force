@@ -1,3 +1,18 @@
+.about {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif; 
+  font-style: italic;
+  padding-top:26px;
+  color:#7A1225;
+  font-size:18px;
+}
+
+.about_fahad {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif; 
+  font-style: regular;
+  padding-top:26px;
+  color:#7A1225;
+  font-size:18px;
+}
 
 .clear {
 	clear:both;
@@ -8,7 +23,7 @@
     font-style: italic;
     position: relative;
     border-radius: 100%;
-    background: #f84342;
+    background: #7A1225;
     border: 1px solid #F7F7F7;
     width: 80px;
     height: 80px;
@@ -27,6 +42,10 @@
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif; 
   font-style: italic;
   padding-top:26px;
+  color:#7A1225;
+  font-size:18px;
+
+
 }
 
 .links {
@@ -37,7 +56,7 @@
 
 .links a {
 	font-family: 'quicksandbold', sans-serif;
-    font-color:#000000;
+    color:#7A1225;
     font-weight:bold;
     font-size:25px;
 	 border-bottom: 2px solid #7A1225
@@ -48,7 +67,7 @@
 }
 
 header {
-	border-top: 9px solid #7A1225
+	border-top: 9px solid #7A1225;
 }
 
 hr {
@@ -67,7 +86,7 @@ h2 {
 }
 
 .next-quote {
-    color:#f84342;
+    color:#7A1225;
     font-family:'quicksandbold', sans-serif;
     font-size:16px;
 }
