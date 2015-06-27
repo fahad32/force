@@ -8,12 +8,9 @@
   <%= csrf_meta_tags %>
 </head>
 
-
-
-
 <body>
 	<header>
-		<div class="col-xs-3">
+		<div class="col-xs-3 col-offset-2">
 			<%= link_to root_path, :class => 'logo' do %>
 		  <div class="circle">
  			 <br />
@@ -26,14 +23,14 @@
 		  <% end %>
 		</div> 
 
-		<div class="col-xs-4 slogan">
+		<div class="col-xs-4 hidden-xs slogan">
 			Bringing you the best ridiculous quotes
 		</div>
 
 		<div class="col-xs-5 links">
 			   <!-- Button trigger modal -->
            <%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
-      </button>
+    	&nbsp;&nbsp
 			<%= link_to 'About', about_path %>
 
 		</div>
@@ -45,12 +42,14 @@
 	      <div class="modal-content">
 	        <div class="modal-header">
 	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	          <h4 class="modal-title" id="myModalLabel">Contribute your own Quote</h4>
+	          <h4 class="modal-title" id="myModalLabel">Contribute your own funny quote</h4>
 	        </div>
 	        <div class="modal-body">
 	            <%= simple_form_for Quote.new do |f| %>
-				<%= f.input :saying %>
-				<%= f.input :author %>
+				<%= f.input :saying, label: "What's the quote?" %>
+			</br>
+			
+				<%= f.input :author, label: 'Who said it?' %>
 
 				<br />
 				<%= f.submit 'Create', :class => 'btn btn-danger' %>
@@ -74,10 +73,10 @@
 
 	<div class="footer">
 		<div class="container">
-			<div class="col-xs-6">
+			<div class="col-xs-12 col-sm-6">
 				<%= link_to "This isn't enough, I need more", root_path, :class=> 'next-quote' %>
 			</div>
-			<div class="col-xs-6 footer-blurb">
+			<div class="col-xs-12 col-sm-6">
 				Built by Fahad, with love.
 		</div>
 	</div>
